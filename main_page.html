@@ -7,12 +7,13 @@
   position: relative;
   border: 3px solid green;
 }
-.vertical-center {
+.center {
   margin: 0;
   position: absolute;
   top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 .button {
   border: none;
@@ -36,7 +37,7 @@
 <h1 style="text-align:center">GAMES</h1>
 <p style="text-align:center">Do you have a profile?</p>
 <div class="container">
-  <div class="vertical-center">
+  <div class="center">
     <button class="button button1">Sign Up</button>
     <button class="button button2">Log In</button>
   </div>
