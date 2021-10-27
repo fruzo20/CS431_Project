@@ -10,15 +10,23 @@
         cursor: pointer;
         width: 10%;
     }
+
+    a.button {
+        -webkit-appearance: button;
+        -moz-appearance: button;
+        appearance: button;
+
+        text-decoration: none;
+        color: #04AA6D;
+    }
     
-</style>
 </style>
     <div style="text-align: center;">
     <body>
         <h1>Create Your Profile!</h1>
         <img src="profilePicture.jpg", alt="Blank Profile Picture", width="200", height="200"> 
         <p>Enter a username and password</p>
-        <form action="/action_page.php"> 
+        <form action="game_page.html"> 
             <div style="text-align: center;" class="container">
             <label for="username"><b>Username (not your real name)</b>: </label><br>
             <input type="text" placeholder="Enter Username" id=username name="username" required><br>
@@ -29,6 +37,7 @@
             <button type="submit">Sign Up</button>
             </div>
         </form>
+
     </body>
     </div>
 </html>
