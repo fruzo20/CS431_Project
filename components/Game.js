@@ -75,8 +75,8 @@ export default class Game extends React.Component {
             secretAccessKey: 'SECRET_ACCESS_KEY',
         }
 
-        this.s3 = new AWS.S3({params: {Bucket:'bigbucketboyz'}, region:"us-east-2", accessKeyId:'AKIAVGCSL7QH5KFDTDET', 
-        secretAccessKey:'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'})
+        this.s3 = new AWS.S3({params: {Bucket:'bigbucketboyz'}, region:"us-east-2", accessKeyId:'ACCESS_KEY', 
+        secretAccessKey:'SECRET_ACCESS_KEY'})
 
         this.promise = new Promise((resolve, reject) => {
         })
