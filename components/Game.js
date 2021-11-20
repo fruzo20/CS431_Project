@@ -68,18 +68,11 @@ export default class Game extends React.Component {
         this.download = this.download.bind(this);
         this.fileName = "dictator_" + Math.floor(Math.random()*10000000000)
 
-        this.config1 = {
-            bucketName: 'bigbucketboyz',
-            region: 'us-east-2',
-            accessKeyId: 'AKIAVGCSL7QH5KFDTDET',
-            secretAccessKey: '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',
-        }
-
         this.config2 = {
             bucketName: "dictdestinationbucket",
             region:"us-east-2",
-            accessKeyId: 'AKIAVGCSL7QH5KFDTDET',
-            secretAccessKey: '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',
+            accessKeyId: 'ACCESS_KEY',
+            secretAccessKey: 'SECRET_ACCESS_KEY',
         }
 
         this.s3 = new AWS.S3({params: {Bucket:'bigbucketboyz'}, region:"us-east-2", accessKeyId:'AKIAVGCSL7QH5KFDTDET', 
