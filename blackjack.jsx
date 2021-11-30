@@ -188,6 +188,7 @@ class Game extends React.Component {
           player.count = this.getCount(player.cards);
   
           if (player.count > 21) {
+            this.download();
             this.setState({ player, gameOver: true, message: 'BUST!' });
           } else {
             this.setState({ deck: updatedDeck, player });
